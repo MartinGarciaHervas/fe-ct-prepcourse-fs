@@ -5,12 +5,12 @@ function obtenerMayor(x, y) {
    // Retornar el número más grande.
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
-   if (x > 0 && x > y) {
+   if (x > y) {
       return x;
-   } else if (y > 0 && y > x) {
+   } else if (y > x) {
       return y;
-   } else if (x = y) {
-      return (x || y)
+   } else {
+      return x || y;
    }
 }
 
@@ -38,7 +38,7 @@ function conection(status) {
    } else if (status === 2) {
       return "Away";
    } else {
-      return "Offline"
+      return "Offline";
    }
 }
 
@@ -52,16 +52,12 @@ function saludo(idioma) {
    switch (idioma) {
       case "aleman":
          return "Guten Tag!";
-         break;
       case "mandarin":
          return "Ni Hao!";
-         break;
       case "ingles":
          return "Hello!";
-         break;
       default:
          return "Hola!";
-         break;
    }
 }
 
@@ -77,16 +73,12 @@ function colors(color) {
    switch (color) {
       case "blue":
          return "This is blue";
-         break;
       case "red":
          return "This is red";
-         break;
       case "green":
          return "This is green";
-         break;
       case "orange":
          return "This is orange";
-         break;
       default:
          return "Color not found";
    }
@@ -97,9 +89,9 @@ function esDiezOCinco(num) {
    // De lo contrario, retornar false.
    // Tu código:
    if (num === 10 || num === 5){
-      return true
+      return true;
    } else {
-      return false
+      return false;
    }
 }
 
@@ -108,9 +100,9 @@ function estaEnRango(num) {
    // De lo contrario, retornar false.
    // Tu código:
    if (num < 50 && num > 20) {
-      return true
+      return true;
    } else {
-      return false
+      return false;
    }
 }
 
@@ -122,9 +114,9 @@ function esEntero(num) {
    // De lo contrario, retorna false.
    // Tu código:
    if (num % 1 == 0) {
-      return true
+      return true;
    } else {
-      return false
+      return false;
    }
 }
 
@@ -135,13 +127,13 @@ function fizzBuzz(num) {
    // De lo contrario, retorna false.
    // Tu código:
    if (num % 3 === 0 && num % 5 === 0) {
-      return "fizzbuzz"
+      return "fizzbuzz";
    } else if (num % 5 === 0) {
-      return "buzz"
+      return "buzz";
    } else if (num % 3 === 0) {
-      return "fizz"
+      return "fizz";
    } else {
-      return false
+      return false;
    }
 }
 
@@ -154,16 +146,16 @@ function operadoresLogicos(num1, num2, num3) {
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
    if (num1 > num2 && num1 > num2 && num1 > 0) {
-      return "Numero 1 es mayor y positivo"
+      return "Numero 1 es mayor y positivo";
    } else if ((num1 < 0) || (num2 < 0) || (num3 < 0)) {
-      return "Hay negativos"
+      return "Hay negativos";
    } else if (num3 > num1 && num3 > num2) {
       num3++;
-      return num3
+      return num3;
    } else if (num1 == 0 && num2 == 0 && num3 == 0){
-      return "Error"
+      return "Error";
    } else {
-      return false
+      return false;
    }
 }
 
@@ -175,13 +167,15 @@ function esPrimo(num) {
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
    if (num <= 1) {
-      return false
-   } for (let i = 2; i < num; i++) {
+      return false;
+   } 
+   
+   for (let i = 2; i < num; i++) {
       if (num % i === 0){
          return false;
       }
    }
-   return true
+   return true;
 }
 
 function esVerdadero(valor) {
@@ -189,9 +183,9 @@ function esVerdadero(valor) {
    // Caso contrario, retornar "Soy falso".
    // Tu código:
    if (valor !== false) {
-      return "Soy verdadero"
+      return "Soy verdadero";
    } else {
-      return "Soy falso"
+      return "Soy falso";
    }
 }
 
