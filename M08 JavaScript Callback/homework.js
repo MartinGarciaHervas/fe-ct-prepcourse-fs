@@ -11,6 +11,10 @@ function mayuscula(nombre) {
    return mayus;
 }
 
+// var palabra = nombre;
+// var resultado = palabra[0].toUpperCase() + palabra.slice(1);
+// return resultado;
+
 function invocarCallback(cb) {
    // Invoca/ejecuta el callback `cb`.
    // [NOTA]: no debes reotrnar nada.
